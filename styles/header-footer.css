@@ -1,0 +1,470 @@
+
+#header-nav {
+    position: fixed;
+    top: 0;
+    display: block;
+    width: 100%;
+    z-index: 1000;
+
+
+    /* on scroll animation */
+    -webkit-transition: -webkit-transform 0.3s .2s ease;
+    -moz-transition: -moz-transform 0.3s .2s ease;
+    -ms-transition: -ms-transform 0.3s .2s ease;
+    transition: transform 0.3s .2s ease;
+
+    /* stop animation flicker */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+#header-nav.hide-nav-bar{
+    -webkit-transform: translate(0, -100%);
+    -moz-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+#logo {
+    padding: 1em;
+    margin-left: 1em;
+    float: left;
+    color: #fb872b;
+    font-size: 2em;
+    font-weight: 800;
+    cursor: cell;
+}
+
+nav[role=navigation] {
+    padding: 2em 2em 2em 1em;
+    margin-right: 1em;
+    float: right;
+    clear: right;
+    -webkit-transition: all 0.3s ease-out;  
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+nav[role=navigation] ul {
+    padding: 0;
+    margin: 0; 
+    list-style: none;
+}
+
+nav[role=navigation] li {
+    display: inline;
+    transition: all 0.2s ease;
+    padding: 2em;
+}
+
+.navlink { 
+    cursor: cell;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 800; 
+    text-decoration: none;
+    transition: .3s linear, box-shadow .15s linear 0s;
+    background-size: 0%;
+    background-position: 0 1em;
+}
+
+.black-font {
+    /* helps change the color of the navlink when you scroll*/
+    color: black;
+}
+
+.navlink:hover{
+    background-size: 100%;
+    background-image: linear-gradient(to right, #fb872b, #ffdf00,#ffdf00); 
+    background-repeat: no-repeat;  
+}
+
+/* small screen nav */
+
+.menu-link {
+    display: none;
+    position: relative;
+    margin: 1em;
+    float: right;
+    height: 30px;
+    width: 40px;
+    cursor: cell;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.bar1, .bar2, .bar3 {
+    position: absolute;
+    margin-top: 3px;
+    background: black;
+    width: 30px;
+    height: 3px;
+    border-radius: 20px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.bar1 {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.bar2 {
+    top: 12px;
+    width: 40px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.bar3 {
+    top: 24px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+/* for hamburger animation */
+
+.menu-link.open .bar1 {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.menu-link.open .bar2 {
+    width: 0%;
+    opacity: 0;
+}
+
+.menu-link.open .bar3  {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* responsive code for navbar */
+
+@media only screen and (max-width: 48em) {
+    
+    #header-nav {
+        background-color: #ffffff;
+        position: fixed;
+        z-index: 5;
+    }
+
+    #logo {
+        font-size: 1.6em;
+        padding: 0.5em;
+    }
+
+    a.menu-link {
+        display: block;
+    }
+    
+    .js nav[role=navigation] {
+        overflow: hidden;
+        max-height: 0;
+    }
+    
+    nav[role=navigation].active {
+        max-height: 20em;
+    }
+    
+    nav[role=navigation] {
+        margin: 0;
+        float: left;
+        padding: 1em;
+    }
+    
+    nav[role=navigation] ul {
+        margin-top: 1.5em;
+    }
+   
+    nav[role=navigation] li {
+        padding: 0em;
+    }
+
+    .navlink {
+        display: block;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        padding-bottom: 1.2em;
+        padding-top: 1.2em;
+        font-size: 1em;
+        color: black;
+    }
+
+    .navlink:hover {
+        cursor: pointer;
+        background-size: 100%;
+        background-image: linear-gradient(to right, #fb872b, #ffdf00,#ffdf00); 
+        background-repeat: no-repeat; 
+        background-position: 0 1.5em; 
+    }
+    
+}
+
+
+
+
+/* Footer design */
+
+/* cool waves */
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-height: 15vh;
+    margin-bottom: -7px; /*Fix for safari gap*/
+    min-height: 10vh;
+}
+
+#gentle-wave {
+    width: 100%;
+}
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+0% {
+    transform: translate3d(-90px,0,0);
+    }
+100% { 
+    transform: translate3d(85px,0,0);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+    h1 {
+      font-size:24px;
+    }
+}
+
+
+/*footer section*/
+
+footer {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.waves.bottom {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height: 150px;
+    max-height: 200px;
+}
+
+#fcontainer {
+    position: relative;
+    top: 180px;;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#bigtext {
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 10em;
+}
+
+#bottom-nav {
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+    padding: 1em 0em 1em 1em;
+    margin: 0 auto;
+}
+
+
+#myemail a {
+    cursor: cell;
+    float: left;
+    text-decoration: none;
+    color: white;
+    font-size: 2.5em;
+    font-weight: 800;
+    background-size: 0%;
+    background-position: 0 1em;
+    background-size: 500%;
+    background-image: linear-gradient(to right, #fb872b,#ffdf00); 
+    background-repeat: no-repeat;
+    transition: .5s linear, box-shadow .15s linear 0s;
+}
+
+#myemail a:hover {
+    background-size: 100%;  
+}
+
+.socials {
+    float: right;
+    clear: right;
+    padding: 2em 0em 1em 0em;
+    -webkit-transition: all 0.3s ease-out;  
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.socials > li {
+    display: inline;
+    padding: 0 2em 0 0;
+}
+
+.social-link {
+    color:white;
+    text-decoration: none;
+    cursor: cell;
+    transition: .3s linear;
+    padding: 0;
+}
+
+.social-link:hover {
+    color: #fb872b;
+}
+
+
+.mycredit {
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    font-size: 1.2em;
+    padding: 1em 0em 1em 1em;
+}
+
+.bibleverse {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1em;
+    padding: 0.5em 0em 0.5em 1em;
+}
+
+@media only screen and (min-width: 28em) and (max-width: 55em) {
+
+    #bottom-nav {
+        padding: 0.5em;
+        bottom: 140px;
+    }
+
+    .socials {
+        float: left;
+        left: 0;
+    }
+
+    .socials > li {
+        padding: 0 3em 0 0;
+    }
+
+    #myemail a {
+        margin: 0 auto;
+        font-size: 2em;
+    }
+    
+    .mycredit {
+        font-size: 1em;
+    }
+
+    .bibleverse {
+        font-size: 0.8em;
+    }
+}
+
+
+@media only screen and (max-width: 28em) {
+    /* for phones */
+    #bigtext {
+        font-size: 7em; 
+    }
+
+    #bottom-nav {
+        padding: 0.5em;
+        bottom: 140px;
+    }
+
+    #myemail a {
+        margin: 0 auto;
+        font-size: 1.2em;
+    }
+
+    .socials {
+        float: left;
+        margin: 2em 0;
+    }
+
+    .socials > li {
+        padding: 0 2em 0 0;
+    }
+    
+    .mycredit {
+        font-size: 0.8em;
+    }
+
+    .bibleverse {
+        font-size: 0.6em;
+    }
+
+}
+

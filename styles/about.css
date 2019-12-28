@@ -1,0 +1,275 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: sofia-pro, sans-serif;
+    background-color: #fb872b;
+}
+
+
+#page-container {
+    position: relative;
+    background-color: white;
+    min-height: 100vh;
+    display: block;
+    padding-bottom: 40rem;
+    transition: transform 0.3s .1s ease;
+    overflow: hidden;
+}
+
+#header-section {
+    position: relative;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.heading{
+    position: relative;
+    top: 80px;
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.heading-text {
+    /* position: relative;
+    float: left; */
+    font-size: 1em;
+    color: #fb872b;
+    letter-spacing: 0.1em;
+    margin: 1em 0 0 1em;
+}
+
+.first-container {
+    position: relative;
+    top: 120px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1115px;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 0 auto;
+}
+
+.pics-container {
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.header-container {
+    position: relative;
+    left: 0;
+    z-index: 1;
+    width: 60%;
+    padding: 1em;
+}
+
+.name-pronounciation {
+    margin: 0 auto;
+    max-width: 450px;
+    bottom: 0;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    opacity: 0.5;
+}
+
+.about-header {
+    font-size: 3em;
+    line-height: 1.5em;
+    font-stretch: 100%;
+}
+
+.pic {
+    position: absolute;
+    padding: 1em;
+}
+
+.pic-1 {
+    top: -2em;
+    left: -1em;
+    width: 60%;
+    z-index: 1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.pic-2 {
+    top: 0px;
+    right: -3.5em;
+    width: 55%;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
+}
+
+.pic-3 {
+    left: 0.5em;
+    bottom: -5.5em;
+    width: 50%;
+    z-index: 1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 0.8s;
+}
+
+img {
+    width: 100%;
+}
+
+#content-section {
+    position: relative;
+}
+
+.content-container {
+    position: relative;
+    top: 150px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding-bottom: 20em;
+}
+
+
+.content-p {
+    font-size: 1.2em;
+    opacity: 0.75;
+    line-height: 36px;
+    margin: 32px calc(2% + 32px) 32px auto;
+    letter-spacing: 0px;
+}
+
+.col-2 {
+    width: 55%;
+}
+
+.worried {
+    display: block;
+}
+
+.big-ad {
+    display: block;
+    font-size: 2em;
+}
+
+.interesting-design {
+    opacity: 0.3;
+    line-height: 72px;
+    position: absolute;
+    margin-top: 1em;
+    margin-left: 1.2em;
+    color: #fb872b;
+}
+
+h1 {
+    font-size: 10em;
+    letter-spacing: -1.2px;
+}
+
+.col-1 {
+    width: 20%;
+}
+
+@media only screen and (max-width: 60em) {
+    
+    .first-container {
+        max-width: 700px;
+        flex-direction: column;
+    }
+
+    .pics-container {
+        margin: 0 auto;
+        width: 100%;
+        height: 440px;
+    }
+    
+    .pic-1 {
+        width: 50%;
+        top: 1em;
+        left: -0.5em;
+    }
+    
+    .pic-2 {
+        right: 0em;
+    }
+    
+    .pic-3 {
+        width: 40%;
+        bottom: -4em;
+        /* display: none; */
+    }
+
+    .header-container {
+        position: relative;
+        padding: 1em;
+        margin: 0 auto;
+        bottom: 0;
+        width: 90%;
+    }
+    
+    .name-pronounciation{
+        margin: 0;
+
+    }
+    
+    .content-p{
+        margin: 2em auto;
+        /* width: auto; */
+        padding-left: 0.5em;
+    }
+    
+    .main-content {
+        margin: 0 auto;
+    }
+
+    .col-2 {
+        width: 80%;
+    }
+
+    .col-1 {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 28em) {
+    .first-container {
+        max-width: 500px;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    
+    .pics-container {
+        height: 390px;
+    }
+    
+    .pic-1 {
+        display: none;
+    }
+    
+    .pic-2 {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        right: 1em;
+    }
+    
+    .pic-3 {
+        display: none;
+    }
+    
+    .about-header {
+        font-size: 2em;
+    }
+
+    .name-pronounciation {
+        font-size: 1em;
+    }
+
+    .content-p {
+        padding: 0;
+        font-size: 1em;
+    }
+}
