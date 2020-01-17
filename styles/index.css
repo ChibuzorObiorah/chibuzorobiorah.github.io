@@ -58,14 +58,17 @@ html, body {
     -webkit-backface-visibility: hidden;
 }
 
-#logo {
+#logo-wrapper {
     padding: 1em;
     margin-left: 1em;
     float: left;
-    color: #fb872b;
     font-size: 2em;
     font-weight: 800;
     cursor: cell;
+}
+
+.logo-img {
+    width: 55px;
 }
 
 nav[role=navigation] {
