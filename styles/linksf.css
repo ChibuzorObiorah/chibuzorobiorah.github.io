@@ -349,6 +349,7 @@ li {
     padding: 1em;
     cursor: cell;
     color: #000000;
+    opacity: 0.5;
 }
 
 .right-arrow {
@@ -358,6 +359,7 @@ li {
     padding: 1em;
     cursor: cell;
     color: #000000;
+    opacity: 0.5;
 }
 
 .caption-p {
@@ -395,6 +397,7 @@ li {
     padding: 1em;
     cursor: cell;
     color: #000000;
+    opacity: 0.5;
 }
 
 .second-right-arrow {
@@ -404,4 +407,21 @@ li {
     padding: 1em;
     cursor: cell;
     color: #000000;
+    opacity: 0.5;
+}
+
+.dg-section {
+    padding: 3em 0em 3em 0em;
+    background: #F2F2F2;
+}
+
+.dg-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.dg {
+    width: 100%;
 }
