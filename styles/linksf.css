@@ -410,8 +410,8 @@ li {
     opacity: 0.5;
 }
 
-.dg-section {
-    padding: 3em 0em 3em 0em;
+.presentation-section {
+    padding: 4em 0em 4em 0em;
     background: #F2F2F2;
 }
 
@@ -423,5 +423,27 @@ li {
 }
 
 .dg {
+    width: 100%;
+}
+
+.flex-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hi-fi {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.hi-fi-wrapper {
+    margin: 0 auto;
+    padding: 2em;
+    width: 40%;
+}
+
+.hi-fi-img {
     width: 100%;
 }
