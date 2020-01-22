@@ -35,11 +35,14 @@
     float: left;
     font-size: 2em;
     font-weight: 800;
-    cursor: cell;
 }
 
 .logo-img {
     width: 55px;
+}
+
+.logo-link {
+    cursor: cell;
 }
 
 nav[role=navigation] {
