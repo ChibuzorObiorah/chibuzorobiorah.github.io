@@ -71,7 +71,7 @@ html, body {
     margin: 0 auto;
     max-width: 450px;
     bottom: 0;
-    font-size: 1.2em;
+    font-size: 1.125em;
     line-height: 1.3em;
     opacity: 0.5;
 }
@@ -121,6 +121,7 @@ img {
 
 #content-section {
     position: relative;
+    padding-bottom: 4em;
 }
 
 .content-container {
@@ -134,10 +135,10 @@ img {
 
 
 .content-p {
-    font-size: 1.2em;
+    font-size: 1.125em;
     opacity: 0.75;
     line-height: 36px;
-    margin: 32px calc(2% + 32px) 32px auto;
+    margin: 32px 32px 32px auto;
     letter-spacing: 0px;
 }
 
@@ -145,13 +146,21 @@ img {
     width: 55%;
 }
 
-.worried {
-    display: block;
+.reach-out {
+    width: 100%;
+    max-width: 1200px;
+    margin: 3em auto 0em auto;
+    padding: 0.5em;
+
 }
 
-.big-ad {
-    display: block;
-    font-size: 2em;
+.hit-me-up {
+    font-size: 4vw;
+    line-height: 1.6875em;
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 .interesting-design {
@@ -170,6 +179,16 @@ h1 {
 
 .col-1 {
     width: 20%;
+}
+
+.main-body-header {
+    font-size: 2em;
+    margin: 0px 32px 0px auto;
+}
+
+.sub-body-header {
+    font-size: 1.5em;
+    margin: 0px 32px 0px auto;
 }
 
 @media only screen and (max-width: 60em) {
@@ -232,6 +251,10 @@ h1 {
         display: none;
     }
 
+    .sub-body-header {
+        margin: 0px auto 0px auto;
+    }
+
 }
 
 @media only screen and (max-width: 28em) {
@@ -271,5 +294,15 @@ h1 {
     .content-p {
         padding: 0;
         font-size: 1em;
+    }
+
+    .reach-out {
+        width: 250px;
+    }
+
+    .hit-me-up {
+        color: black;
+        -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+        /* -webkit-text-stroke-width: 1px; */
     }
 }
