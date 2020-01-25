@@ -60,10 +60,8 @@ html, body {
 
 #logo-wrapper {
     padding: 1em;
-    margin-left: 1em;
+    margin: 1em 2em;
     float: left;
-    font-size: 2em;
-    font-weight: 800;
 }
 
 .logo-img {
@@ -213,9 +211,9 @@ nav[role=navigation] li {
         z-index: 1;
     }
 
-    #logo {
-        font-size: 1.6em;
+    #logo-wrapper {
         padding: 0.5em;
+        margin: 1em;
     }
 
     a.menu-link {
@@ -621,7 +619,7 @@ nav[role=navigation] li {
     overflow: hidden;
     opacity: 0;
     transform: translateY(1em);
-    transition: transform 8s .25s cubic-bezier(0,1,.3,1), opacity .3s .25s ease-out;  
+    transition: transform 5s .1s cubic-bezier(0,1,.3,1), opacity .2s ease-out;  
 }
 
 .projcontainer.is-visible {
@@ -635,7 +633,7 @@ nav[role=navigation] li {
 
 .projcontainer.second {
     left: 0px;
-    transition-delay: 0.4s;
+    transition-delay: 0.2s;
 }
 
 .projdeets {

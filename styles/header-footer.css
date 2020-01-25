@@ -30,11 +30,9 @@
 }
 
 #logo-wrapper {
+    margin: 1em 2em;
     padding: 1em;
-    margin-left: 1em;
     float: left;
-    font-size: 2em;
-    font-weight: 800;
 }
 
 .logo-img {
@@ -184,9 +182,9 @@ nav[role=navigation] li {
         z-index: 5;
     }
 
-    #logo {
-        font-size: 1.6em;
+    #logo-wrapper {
         padding: 0.5em;
+        margin: 1em;
     }
 
     a.menu-link {
