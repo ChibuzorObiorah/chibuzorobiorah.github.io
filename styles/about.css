@@ -121,7 +121,7 @@ img {
 
 #content-section {
     position: relative;
-    padding-bottom: 4em;
+    padding-bottom: 2em;
 }
 
 .content-container {
@@ -156,19 +156,24 @@ img {
 
 .reach-out {
     width: 100%;
-    max-width: 1200px;
-    margin: 3em auto 0em auto;
-    padding: 0.5em;
+    max-width: 950px;
+    margin: 2em auto 0em auto;
+    padding: 1em;
+    opacity: 0;
+    transform: translateY(1em);
+    transition: transform 3s .25s cubic-bezier(0,1,.3,1), opacity .3s .25s ease-out;  
 
 }
 
+.reach-out.is-visible {
+    opacity: 1;
+    transform: translateY(-1em);
+}
+
 .hit-me-up {
-    font-size: 4vw;
-    line-height: 1.6875em;
+    font-size: 2.5em;
+    line-height: 1.8em;
     color: black;
-    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
 }
 
 .interesting-design {
@@ -269,6 +274,10 @@ h1 {
         margin: 0px auto 0px auto;
     }
 
+    .reach-out {
+        max-width: 700px;
+    }
+
 }
 
 @media only screen and (max-width: 28em) {
@@ -311,12 +320,6 @@ h1 {
     }
 
     .reach-out {
-        width: 250px;
-    }
-
-    .hit-me-up {
-        color: black;
-        -webkit-text-fill-color: black; /* Will override color (regardless of order) */
-        /* -webkit-text-stroke-width: 1px; */
+        max-width: 310px;
     }
 }
