@@ -164,7 +164,7 @@ html, body {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1360px;
     margin: 0 auto;
     /* padding: 0em 0.5em 0em 0.5em; */
 }
@@ -221,19 +221,19 @@ html, body {
 
 .main-body-header {
     font-size: 2em;
-    margin: 0px 32px 0px auto;
+    margin: 0 auto;
 }
 
 .sub-body-header {
     font-size: 1.5em;
-    margin: 0px 32px 0px auto;
+    margin: 0 auto;
 }
 
 .content-p {
     font-size: 1.125em;
     opacity: 0.75;
     line-height: 1.8;
-    margin: 32px 32px 32px auto;
+    margin: 16px auto;
     letter-spacing: 0px;
 }
 
@@ -245,10 +245,10 @@ html, body {
     display: flex;
     flex-wrap: nowrap;
     overflow-y: hidden;
-    overflow-x: auto;
-    width: 60%;
+    overflow-x: show;
+    width: 70%;
     height: 520px;
-    margin: 0em 0em 0em auto;
+    margin: 0 auto;
     /* -webkit-overflow-scrolling: touch; */
     background-image: linear-gradient(to right, white, white), 
     linear-gradient(to right, white, white), 

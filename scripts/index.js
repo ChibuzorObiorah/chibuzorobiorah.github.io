@@ -1,18 +1,4 @@
 $(document).ready(function() {
-    $('html').on('DOMMouseScroll mousewheel', function (e) {
-      if(e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0 && $(window).scrollTop() > 100 ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
-        //scroll down
-        console.log('Down');
-        $( "#header-nav" ).addClass( "hide-nav-bar" );
-      } else {
-        //scroll up
-        console.log('Up');
-        $( "#header-nav" ).removeClass( "hide-nav-bar" );
-      }
-      //prevent page fom scrolling
-      //return false;
-    });
-
     $(window).on("scroll", function() {
       if($(window).scrollTop() > 800) {
           $(".navlink").addClass("black-font");
@@ -79,3 +65,20 @@ function isElementInViewport(el) {
       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
   );
 }
+
+
+
+// HIDE NAV BAR ON SCROLL CODE:
+   // $('html').on('DOMMouseScroll mousewheel', function (e) {
+    //   if(e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0 && $(window).scrollTop() > 100 ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
+    //     //scroll down
+    //     console.log('Down');
+    //     $( "#header-nav" ).addClass( "hide-nav-bar" );
+    //   } else {
+    //     //scroll up
+    //     console.log('Up');
+    //     $( "#header-nav" ).removeClass( "hide-nav-bar" );
+    //   }
+    //   //prevent page fom scrolling
+    //   //return false;
+    // });

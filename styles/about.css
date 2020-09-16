@@ -33,12 +33,15 @@ html, body {
 }
 
 .heading-text {
-    /* position: relative;
-    float: left; */
-    font-size: 1em;
-    color: #fb872b;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 18px;
     letter-spacing: 0.1em;
-    margin: 1em 0 0 1em;
+    text-transform: uppercase;
+
+    color: #FB872B;
+    margin: 1em 0 0 0;
 }
 
 .first-container {
@@ -77,9 +80,12 @@ html, body {
 }
 
 .about-header {
-    font-size: 3em;
-    line-height: 1.5em;
+    font-family: Sofia Pro;
+    font-weight: 900;
+    font-size: 3.25rem;
+    line-height: 4.25rem;
     font-stretch: 100%;
+    letter-spacing: 0.493714px;
 }
 
 .pic {

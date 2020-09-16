@@ -30,7 +30,7 @@
 }
 
 #logo-wrapper {
-    margin: 1em 2em;
+    margin: 1em 1em 1em 3em;
     padding: 1em;
     float: left;
 }
@@ -44,8 +44,8 @@
 }
 
 nav[role=navigation] {
-    padding: 2em 2em 2em 1em;
-    margin-right: 1em;
+    padding: 1em;
+    margin: 1em;
     float: right;
     clear: right;
     -webkit-transition: all 0.3s ease-out;  
