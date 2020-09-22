@@ -278,7 +278,7 @@ nav[role=navigation] li {
 }
 
 .small-header {
-    font-family: Sofia Pro;
+    font-family: sofia-pro, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 1rem;
@@ -291,7 +291,7 @@ nav[role=navigation] li {
 
 .name {
     display: inline;
-    font-family: Sofia Pro;
+    font-family: sofia-pro, sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 3rem;
@@ -339,7 +339,7 @@ nav[role=navigation] li {
 	background: none;
 	padding: 16px 32px;
     letter-spacing: 2px;
-    font-family: Sofia Pro;
+    font-family: sofia-pro, sans-serif;
     font-size: 1rem;
 	outline: none;
 	-webkit-transition: all 0.3s;
