@@ -572,6 +572,14 @@ nav[role=navigation] li {
 
 .work-member {
     margin-bottom: 10em;
+    opacity: 0;
+    transform: translateY(1em);
+    transition: transform 3s .25s cubic-bezier(0,1,.3,1), opacity .25s .25s ease-out;
+}
+
+.work-member.is-visible {
+    opacity: 1;
+    transform: translateY(-1em);
 }
 
 .work-member a {
@@ -593,7 +601,9 @@ nav[role=navigation] li {
 	-moz-transition: all 0.3s;
     transition: all 0.3s;
     border-radius: 8px;
+    
 }
+
 
 .work-member-preview img {
     transition: var(--transition-whoosh);
