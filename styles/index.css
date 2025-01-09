@@ -277,12 +277,12 @@ nav[role=navigation] li {
     
 }
 
-.small-header {
+.main-header {
     font-family: sofia-pro, sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 1rem;
-    line-height: 18px;
+    font-weight: bolder;
+    font-size: 8rem;
+    line-height: auto;
     letter-spacing: 0.185143px;
     text-transform: uppercase;
     color: #FB872B;
