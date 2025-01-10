@@ -269,7 +269,7 @@ nav[role=navigation] li {
 
 #intro-container {
     position: absolute;
-    top: 20%;
+    bottom: 20%;
     margin: auto 7em;
     max-width: 850px;
     margin-bottom: 32px;
@@ -278,37 +278,14 @@ nav[role=navigation] li {
 }
 
 .main-header {
-    font-family: sofia-pro, sans-serif;
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 8rem;
-    line-height: auto;
-    letter-spacing: 0.185143px;
-    text-transform: uppercase;
-    color: #FB872B;
-
-}
-
-.name {
-    display: inline;
-    font-family: sofia-pro, sans-serif;
-    font-style: normal;
+    font-family: "sofia pro", sans-serif;
     font-weight: 900;
-    font-size: 3rem;
-    line-height: 4.25rem;
-    letter-spacing: 0.493714px;
+    font-style: normal;
+    font-size: 8rem;
+    line-height: 0.9;
+    letter-spacing: -10;
+    text-transform: uppercase;
     color: #FFFFFF;
-}
-
-.highlight {
-    transition: 1s;
-    font-weight: bold;
-    color: #7BFFC3
-}
-
-.highlight:hover {
-    cursor: cell;
-    color: #FB872B;
 
 }
 
@@ -317,8 +294,7 @@ nav[role=navigation] li {
     font-weight: 400;
     max-width: 750px;
     color: #D6D6D6;
-    font-size: 1.5rem;
-    padding-top: 0.5em;
+    font-size: 2rem;
     margin-top: 0;
     margin-bottom: 1em;
 }
