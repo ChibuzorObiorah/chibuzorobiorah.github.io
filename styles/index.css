@@ -267,18 +267,18 @@ nav[role=navigation] li {
 /* MAIN LANDING CONTENT, INCLUDES MY NAME AND SOME ABOUT ME STUFF*/
 
 #intro-container {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    margin: auto 8em auto 8em;
-    padding: 2em;
-    padding-left: 2em;
-    font-size: 1.5em;
-    width: 100%;
+    height: 100vh;
+    margin: auto 3.5em;
+    font-size: 2vw;
+    font-size: min(2vw, 100px);
+    max-width: 1000px;
 }
+
 
 /* Adjust margin/padding for smaller screens */
 @media (max-width: 768px) {
@@ -293,28 +293,30 @@ nav[role=navigation] li {
     font-weight: 900;
     font-style: normal;
     font-size: 24vw;
-    font-size: min(24vw, 120px);
-    line-height: 0.9;
-    letter-spacing: -10px;
+    font-size: min(24vw, 160px);
+    line-height: 0.8;
+    letter-spacing: -12px;
     text-transform: uppercase;
     color: #FFFFFF;
+    z-index: 2;
     transition: transform 0.3s ease, opacity 0.3s ease;
 
 }
 
 #lastname {
-    margin-top: -80px;
+    margin-top: -116px;
     color: grey;
+    position: relative;
+    z-index: 1;
 }
 
 #aboutme {
-    color: grey;
+    color:grey;
     font-weight: normal;
-    margin-top: -40px;
-    width: 100%; /* Set width to 100% */
-    max-width: 600px;
+    margin-top: -80px;
     text-align: left;
 }
+    
 
 /* CUE TO TELL PEOPLE TO SCROLL DOWN */
 
@@ -520,7 +522,7 @@ nav[role=navigation] li {
     top: 0px;
     font-size: 3rem;
     margin-left: 112px;;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
 }
 
 .work-member {
