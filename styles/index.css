@@ -274,8 +274,8 @@ nav[role=navigation] li {
     overflow: hidden;
     height: 100vh;
     margin: auto 3.5em;
-    font-size: 2vw;
-    font-size: min(2vw, 100px);
+    font-size: 1.5vw;
+    font-size: min(1.5vw, 80px);
     max-width: 1000px;
 }
 
@@ -289,18 +289,17 @@ nav[role=navigation] li {
 }
 
 .big-name {
-    font-family: "sofia pro", sans-serif;
+    font-family: "sofia-pro", sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 24vw;
-    font-size: min(24vw, 160px);
+    font-size: 20vw;
+    font-size: min(20vw, 140px);
     line-height: 0.8;
     letter-spacing: -12px;
     text-transform: uppercase;
     color: #FFFFFF;
     z-index: 2;
     transition: transform 0.3s ease, opacity 0.3s ease;
-
 }
 
 #lastname {
