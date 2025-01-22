@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     position: relative;
     font-family: sofia-pro, sans-serif;
+    font-size: 16px;
     background-color: #fb872b;
 }
 
@@ -270,12 +271,12 @@ nav[role=navigation] li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     position: relative;
     overflow: hidden;
     height: 100vh;
     margin: auto 3.5em;
-    font-size: 1.5vw;
-    font-size: min(1.5vw, 80px);
+    font-size: 2rem;
     max-width: 1000px;
 }
 
@@ -289,13 +290,12 @@ nav[role=navigation] li {
 }
 
 .big-name {
-    font-family: "sofia-pro", sans-serif;
-    font-weight: 900;
+    font-family: roc-grotesk-condensed, sans-serif;
+    font-weight: 800;
     font-style: normal;
-    font-size: 20vw;
-    font-size: min(20vw, 140px);
+    font-size: 8rem;
     line-height: 0.8;
-    letter-spacing: -12px;
+    letter-spacing: -2px;
     text-transform: uppercase;
     color: #FFFFFF;
     z-index: 2;
@@ -303,7 +303,7 @@ nav[role=navigation] li {
 }
 
 #lastname {
-    margin-top: -116px;
+    margin-top: -120px;
     color: grey;
     position: relative;
     z-index: 1;
