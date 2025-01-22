@@ -284,10 +284,9 @@ img {
 
 .img-caption {
     font-size: 1em;
-    opacity: 0.4;
-    line-height: 1.8;
-    margin: 0 auto;
-    letter-spacing: 0px;
+    opacity: 0.5;
+    line-height: 1.5;
+    margin: -24px auto;
     width: 90%;
     text-align: center;
 }

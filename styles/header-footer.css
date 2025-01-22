@@ -327,6 +327,9 @@ footer {
 }
 
 #bigtext {
+    font-family: roc-grotesk-condensed, sans-serif;
+    font-weight: 800;
+    font-style: normal;
     color: rgba(255, 255, 255, 0.1);
     font-size: 10em;
 }
@@ -395,15 +398,6 @@ footer {
     right: 0;
     font-size: 1.2em;
     padding: 1em 0em 1em 1em;
-}
-
-.bibleverse {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font-size: 1em;
-    padding: 0.5em 0em 0.5em 1em;
 }
 
 @media only screen and (min-width: 28em) and (max-width: 55em) {
