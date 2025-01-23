@@ -76,6 +76,8 @@ img {
 }
 
 .proj-title {
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 700;
     font-size: 2.5em;
     margin: 0.5em 0 0.5em 0;
 }
@@ -241,6 +243,8 @@ img {
     margin: 2em 0em;
 }
 .main-body-header {
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 600;
     font-size: 2em;
     margin: 0 auto;
 }

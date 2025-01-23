@@ -291,7 +291,7 @@ nav[role=navigation] li {
 
 .big-name {
     font-family: roc-grotesk-condensed, sans-serif;
-    font-weight: 800;
+    font-weight: 900;
     font-style: normal;
     font-size: 8rem;
     line-height: 0.8;
@@ -519,6 +519,8 @@ nav[role=navigation] li {
 .section-header {
     position: relative;
     top: 0px;
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 600;
     font-size: 3rem;
     margin-left: 112px;;
     margin-bottom: 2em;
@@ -596,6 +598,8 @@ img {
 }
 
 h3 {
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 600;
     font-size: 2em;
     margin: 0.5em 0;
 }
@@ -607,6 +611,7 @@ h4 {
     font-weight: normal;
     opacity: 50%;
 }
+
 
 .work-member-description {
     width: 60%;
