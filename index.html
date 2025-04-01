@@ -44,9 +44,14 @@
                         <!-- /Small screen menu button -->
                     </div>
                     <div id="intro-container">
-                        <h1 class="animated fadeIn big-name">Chibuzor</h1>
-                        <h1 class="animated fadeIn big-name" id="lastname">Obiorah</h1>
-                        <p id="aboutme">Busy at Microsoft, working on generative AI and leading design for the image editor in Microsoft Designer</p>
+                        <!-- <h1 class="animated fadeIn big-name">Chibuzor</h1>
+                        <h1 class="animated fadeIn big-name" id="lastname">Obiorah</h1> -->
+                        <p id="aboutme">I'm <span id="name">Chibuzor Obiorah</span>,
+                            <br>
+                            a product designer based in New York City.
+                            <br>
+                            Currently leading the design efforts for the image editor in Microsoft Designer
+                        </p>
                     </div>
                     <div class="scrollcontainer">
                         <!-- <span class="scrolltext">DIVE IN</span> -->
@@ -73,31 +78,61 @@
             
             <!--main content, includes all projects-->
             <section>
-                <div class="work-container">
-                    <h1 class="section-header">Selected Works</h1>
-
-                    <!-- WORK IN PROGRESS -->
-                    <div class="work-member show-on-scroll">
-                        <a href="/canvas-copilot.html">
-                            <div class="work-member-preview">
-                                <img alt="Copilot on canvas thumbnail" class="fit" src="img/copilot-canvas/canvas-copilot-thumbnail.png">
+                <div class="prototype-gallery">
+                    <div class="prototype-gallery-row">
+                        <div class="prototype-member show-on-scroll">
+                            <div class="prototype">
+                                <video autoplay loop muted class="prototype-img" preload="none">
+                                    <source src="/img/index/super_res_prototype.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
-                        </a>
-                        <div class="work-member-deets">
-                            <div class="tags">
-                                <h4>AI</h4>
-                                <h4>PROTOTYPE</h4>
-                                <h4>UI/UX</h4>
+                            <div class="prototype-deets">
+                                <h1 class="prototype-header">
+                                    Super Resolution in Designer
+                                </h1>
+                                <p class="prototype-description">
+                                    Designed a new feature in Microsoft Designer that allows users to upscale images to 4x their original size using generative AI
+                                </p> 
                             </div>
-                            <div class="work-member-header">
-                                <h3>Copilot on OneNote Canvas</h3>
+                        </div>
+                        <div class="prototype-member show-on-scroll">
+                            <div class="prototype show-on-scroll">
+                                <video autoplay loop muted class="prototype-img" preload="none">
+                                   <source src="/img/copilot-canvas/rewrite_prototype.mp4" type="video/mp4" />
+                                   Your browser does not support the video tag.
+                                 </video>
                             </div>
-                            <p class="work-member-description">
-                               Worked on integrating Copilot, an AI solution, into the OneNote canvas to help users capture their ideas isntantly in their context.
-                            </p> 
+                            <div class="prototype-deets">
+                                <h1 class="prototype-header">
+                                    Copilot on OneNote Canvas
+                                </h1>
+                                <p class="prototype-description">
+                                   Worked on integrating Copilot, an AI solution, into the OneNote canvas to help users capture their ideas instantly in their 
+                                   context and rewrite existing content
+                                </p> 
+                            </div>
+                        </div>
+                        <div class="prototype-member show-on-scroll">
+                            <div class="prototype">
+                                <video autoplay loop muted class="prototype-img" preload="none">
+                                    <source src="/img/copilot-canvas/tidyUp-prototype.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                    </video>
+                            </div>
+                            <div class="prototype-deets">
+                                <h1 class="prototype-header">
+                                    Tidy Up in OneNote Canvas
+                                </h1>
+                                <p class="prototype-description">
+                                    Designed a new feature in OneNote that allows users to use AI to tidy up their notes by organizing text, images, and removing redundant content
+                                </p> 
+                            </div>
                         </div>
                     </div>
-                    <!-- END OF WORK IN PROGRESS -->
+                </div>
+                <div class="work-container">
+                    <h1 class="section-header">Case studies</h1>
                     <div class="work-member show-on-scroll">
                         <a href="/thredup.html">
                             <div class="work-member-preview">
