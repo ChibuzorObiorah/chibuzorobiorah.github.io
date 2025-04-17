@@ -278,7 +278,7 @@ nav[role=navigation] li {
 }
 
 #aboutme {
-    width: 100%;
+    width: 80%;
     font-family: roc-grotesk, sans-serif;
     font-weight: 700;
     color: white;
@@ -290,6 +290,14 @@ nav[role=navigation] li {
     color: #fb872b;
 }
 
+#jobtitle {
+    color: lightgrey;
+}
+
+#jobdescription {
+    color: grey;
+}
+
 /* Adjust margin/padding for smaller screens */
 @media (max-width: 768px) {
     #intro-container {
@@ -297,26 +305,6 @@ nav[role=navigation] li {
         padding-left: 0.5em; /* Adjust padding on the left */
     }
 }
-
-/* .big-name {
-    font-family: roc-grotesk-condensed, sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 8rem;
-    line-height: 0.8;
-    letter-spacing: -2px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    z-index: 2;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-#lastname {
-    margin-top: -120px;
-    color: grey;
-    position: relative;
-    z-index: 1;
-} */
 
 
 
