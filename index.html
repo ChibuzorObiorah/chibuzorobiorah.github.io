@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156595916-1"></script>
@@ -26,13 +26,13 @@
             <section>
                 <div id="landing">
                     <div id="header-nav">
-                        <div id="logo-wrapper"><a class="logo-link" href="index.html"><img class="logo-img" src="img/main-logo.png"></div></a>
+                        <div id="logo-wrapper"><a class="logo-link" href="index.html"><img class="logo-img" src="img/main-logo.png" alt="Chibuzor Obiorah Logo"></div></a>
                         <nav id="menu" role="navigation">
                             <ul>
                                 <li><a class="navlink" href="index.html">Work</a></li>
                                 <li><a class="navlink" href="about.html">About</a></li>
-                                <li><a class="navlink" href="https://drive.google.com/file/d/1Z42ErPtjNvduKFsINJmiIpJyJgX2cGnd/view?usp=sharing/"target="_blank">Résumé</a></li>
-                                <li><a class="navlink" href="https://chibuzorobiorah.myportfolio.com/" target="_blank">Photography</a></li>
+                                <li><a class="navlink" href="https://drive.google.com/file/d/1Z42ErPtjNvduKFsINJmiIpJyJgX2cGnd/view?usp=sharing/" target="_blank" rel="noopener">Résumé</a></li>
+                                <li><a class="navlink" href="https://chibuzorobiorah.myportfolio.com/" target="_blank" rel="noopener">Photography</a></li>
                             </ul>
                         </nav>
                         <!-- Small screen menu button -->
@@ -50,7 +50,7 @@
                             <br>
                             <span id="jobtitle">Product designer, New York City</span>
                             <br>
-                            <span id="jobdescription">Currently leading design for the image editor in Microsoft Designer</span>
+                            <span id="jobdescription">Leading design for the image editor in Microsoft Copilot</span>
                         </p>
                     </div>
                     <div class="scrollcontainer">
@@ -78,8 +78,80 @@
             
             <!--main content, includes all projects-->
             <section>
-                <div class="work-container">
-                    <h1 class="section-header">Selected works</h1>
+                <!--Prototype gallery-->
+                <div class="prototype-gallery">
+                    <div class="prototype-gallery-row">
+                        <div class="prototype-member show-on-scroll">
+                            <div class="prototype">
+                                <video autoplay loop muted class="prototype-img" id="shortcutter" preload="none">
+                                    <source src="/img/side/shortcutter_prototype.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="prototype-deets">
+                                <h1 class="prototype-header">
+                                    Shortcutter.io
+                                </h1>
+                                <p class="prototype-description">
+                                    Designed and coded a tool to help users learn shortcuts for their favorite apps in a fun and engaging way
+                                </p> 
+                            </div>
+                        </div>
+                        <div class="prototype-member show-on-scroll">
+                            <div class="prototype">
+                                <video autoplay loop muted class="prototype-img" preload="none">
+                                    <source src="/img/superres/superres_prototype.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="prototype-deets">
+                                <h1 class="prototype-header">
+                                    Super Resolution in Designer
+                                </h1>
+                                <p class="prototype-description">
+                                    Designed a new feature in Microsoft Designer that allows users to upscale images to 4x their original size using generative AI
+                                </p> 
+                            </div>
+                        </div>
+                        <div class="prototype-member show-on-scroll">
+                            <div class="prototype show-on-scroll">
+                                <video autoplay loop muted class="prototype-img" preload="none">
+                                <source src="/img/copilot-canvas/rewrite_prototype.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="prototype-deets">
+                                <h1 class="prototype-header">
+                                    Copilot on OneNote Canvas
+                                </h1>
+                                <p class="prototype-description">
+                                Worked on integrating Copilot, an AI solution, into the OneNote canvas to help users capture their ideas instantly in their 
+                                context and rewrite existing content
+                                </p> 
+                            </div>
+                        </div>
+                        <div class="prototype-member show-on-scroll">
+                            <div class="prototype">
+                                <video autoplay loop muted class="prototype-img" preload="none">
+                                    <source src="/img/copilot-canvas/tidyUp-prototype.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                    </video>
+                            </div>
+                            <div class="prototype-deets">
+                                <h1 class="prototype-header">
+                                    Tidy Up in OneNote Canvas
+                                </h1>
+                                <p class="prototype-description">
+                                    Designed a new feature in OneNote that allows users to use AI to tidy up their notes by organizing text, images, and removing redundant content
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+            </div> 
+            
+            <!--Case Studies-->
+            <div class="work-container">
+                    <h1 class="section-header">Case studies</h1>
                     <div class="work-member show-on-scroll">
                         <a href="/copilot-context.html">
                             <div class="work-member-preview">
@@ -186,12 +258,11 @@
                     <div id="bottom-nav">
                         <div id="myemail"><a href="mailto:obiorahchibuzor3@gmail.com" target="_blank">obiorahchibuzor3@gmail.com</a></div>
                         <ul class="socials"> 
-                            <li><a class="social-link" href="https://www.linkedin.com/in/chibuzor-obiorah-252273175"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                            <li><a class="social-link" href="https://www.behance.net/chibuzor3"><i class="fab fa-behance-square fa-2x"></i></a></li>
-                            <li><a class="social-link" href="https://medium.com/@steviie1000"><i class="fab fa-medium fa-2x"></i></a></li>
+                            <li><a class="social-link" href="https://www.linkedin.com/in/chibobi" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                            <li><a class="social-link" href="https://www.behance.net/chibuzor3" aria-label="Behance"><i class="fab fa-behance-square fa-2x"></i></a></li>
                         </ul>
                     </div>
-                    <p class="mycredit">I designed and coded this website help of AI ©2025 </p>
+                    <p class="mycredit">Designed and coded by me ©2025 </p>
                 </div>
             </footer>
         </div>
