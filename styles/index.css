@@ -707,8 +707,21 @@ h4 {
         margin: 0 1em;
     }
 
-
     .work-member-description{
+        width: 100%;
+    }
+
+    /* Add responsive rules for prototype gallery */
+    .prototype-gallery {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .prototype-deets {
+        margin: 0.5em 2em;
+    }
+
+    .prototype-description {
         width: 100%;
     }
 }
@@ -731,6 +744,25 @@ h4 {
     }
 
     .work-member-description{
+        font-size: 1em;
+    }
+
+    /* Add responsive rules for prototype gallery on phones */
+    .prototype-gallery {
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 4em;
+    }
+
+    .prototype-deets {
+        margin: 0.5em 1em;
+    }
+
+    .prototype-header {
+        font-size: 1.25em;
+    }
+
+    .prototype-description {
         font-size: 1em;
     }
 }
