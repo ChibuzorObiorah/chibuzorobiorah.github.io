@@ -13,19 +13,18 @@
     transition: transform 0.3s .2s ease;
 
     /* stop animation flicker */
-    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    transform: translate3d(0px, 0px, 0px);
+    backface-visibility: hidden;
     -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
 }
 
 #header-nav.hide-nav-bar{
     -webkit-transform: translate(0, -100%);
     -moz-transform: translate(0, -100%);
     -ms-transform: translate(0, -100%);
-    transform: translate(0, -100%);
-    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 #logo-wrapper {
@@ -44,7 +43,7 @@
 
 nav[role=navigation] {
     padding: 1em;
-    margin: 1em;
+    margin: 1em 3em 1em 1em;
     float: right;
     clear: right;
     -webkit-transition: all 0.3s ease-out;  
@@ -63,7 +62,7 @@ nav[role=navigation] ul {
 nav[role=navigation] li {
     display: inline;
     transition: all 0.2s ease;
-    padding: 2em;
+    padding: 1em;
 }
 
 .navlink { 
@@ -72,9 +71,18 @@ nav[role=navigation] li {
     font-size: 1.2em;
     font-weight: 800; 
     text-decoration: none;
-    transition: .3s linear, box-shadow .15s linear 0s;
+    -webkit-transition: .3s linear, box-shadow .15s linear 0s, -webkit-transform 0.2s ease;
+    -moz-transition: .3s linear, box-shadow .15s linear 0s, -moz-transform 0.2s ease;
+    -ms-transition: .3s linear, box-shadow .15s linear 0s, -ms-transform 0.2s ease;
+    -o-transition: .3s linear, box-shadow .15s linear 0s, -o-transform 0.2s ease;
+    transition: .3s linear, box-shadow .15s linear 0s, transform 0.2s ease;
     background-size: 0%;
     background-position: 0 1em;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
 }
 
 .black-font {
@@ -83,9 +91,8 @@ nav[role=navigation] li {
 }
 
 .navlink:hover{
-    background-size: 100%;
-    background-image: linear-gradient(to right, #fb872b, #ffdf00,#ffdf00); 
-    background-repeat: no-repeat;  
+    color: #fb872b;
+    transition: color 0.2s ease;
 }
 
 /* small screen nav */
@@ -221,14 +228,22 @@ nav[role=navigation] li {
         padding-top: 1.2em;
         font-size: 1em;
         color: black;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transition: -webkit-transform 0.2s ease;
+        -moz-transition: -moz-transform 0.2s ease;
+        -ms-transition: -ms-transform 0.2s ease;
+        -o-transition: -o-transform 0.2s ease;
+        transition: transform 0.2s ease;
     }
 
     .navlink:hover {
         cursor: pointer;
-        background-size: 100%;
-        background-image: linear-gradient(to right, #fb872b, #ffdf00,#ffdf00); 
-        background-repeat: no-repeat; 
-        background-position: 0 1.5em; 
+        color: #fb872b;
+        transition: color 0.2s ease;
     }
     
 }
