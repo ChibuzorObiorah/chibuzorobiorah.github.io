@@ -1,4 +1,17 @@
 $(document).ready(function() {
+    // Animate about section on page load
+    setTimeout(function() {
+        document.getElementById('name').classList.add('animate-in');
+    }, 200);
+    
+    setTimeout(function() {
+        document.getElementById('jobtitle').classList.add('animate-in');
+    }, 500);
+    
+    setTimeout(function() {
+        document.getElementById('jobdescription').classList.add('animate-in');
+    }, 800);
+    
     $(window).on("scroll", function() {
       if($(window).scrollTop() > 800) {
           $(".navlink").addClass("black-font");
