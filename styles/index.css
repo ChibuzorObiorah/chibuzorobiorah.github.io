@@ -535,22 +535,19 @@ nav[role=navigation] li {
 
 .prototype-gallery {
     width: 100%;
-    max-width: 1450px;
-    margin: 4em auto;
-    padding-top: 8em;
-    padding-left: 4em;
-    padding-right: 4em;
+    margin: 0;
+    padding-bottom: 4em;
     overflow: hidden;
 }
 
 .prototype-gallery-row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 6em;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    gap: 4em;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 4em;
 }
 
 .prototype-member {
@@ -558,11 +555,20 @@ nav[role=navigation] li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: calc(50% - 3em);
+    flex: 1 1 calc(50% - 3em);
+    max-width: calc(50% - 3em);
     height: 100%;
     opacity: 0;
     transform: translateY(1em);
     transition: transform 3s 0.10s cubic-bezier(0,1,.3,1), opacity .3s .10s ease-out;
+}
+
+/* When only one item in a row, make it full width */
+.prototype-member:only-child {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
 }
 
 .prototype-member.is-visible {
@@ -593,7 +599,7 @@ nav[role=navigation] li {
 
 .prototype-deets {
     width: 100%;
-    margin: 0.5em 7em;
+    margin: 0.5em 0;
     justify-content: center;
 }
 
@@ -605,7 +611,7 @@ nav[role=navigation] li {
 }
 
 .prototype-description {
-    width: 60%;
+    width: 100%;
     font-size: 1.25em;
     line-height: 1.5;
     opacity: 0.75;
@@ -614,14 +620,23 @@ nav[role=navigation] li {
 
 /* CASE STUDIES SECTION */
 
+#work-section {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 4em;
+    padding-right: 4em;
+    box-sizing: border-box;
+}
+
 .work-container {
     width: 100%;
-    max-width: 1750px;
-    margin: 0 auto;
+    margin: 0;
     padding-top: 4em;
     padding-bottom: 4em;
     overflow: hidden;
 }
+
 
 .section-header {
     position: relative;
@@ -629,13 +644,17 @@ nav[role=navigation] li {
     font-family: roc-grotesk, sans-serif;
     font-weight: 600;
     font-size: 3rem;
-    margin-left: 112px;;
     margin-bottom: 2em;
 }
 
 
 .work-member {
-    margin-bottom: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 6em;
     opacity: 0;
     transform: translateY(1em);
     transition: transform 3s 0.10s cubic-bezier(0,1,.3,1), opacity .3s .10s ease-out;
@@ -658,7 +677,7 @@ nav[role=navigation] li {
 .work-member-preview {
     overflow: hidden;
     cursor: cell;
-    margin: 0 7em;
+    width: 100%;
     border-radius: 16px;
     max-height: 800px;
     -webkit-transition: all 0.3s;
@@ -685,7 +704,7 @@ nav[role=navigation] li {
 }
 
 .work-member-deets {
-    margin: 0.2em 7em;
+    width: 100%;
     justify-content: center;
 }
 
@@ -735,6 +754,11 @@ h4 {
 @media only screen and (max-width: 77em) {
     /* FOR TABLETS */
    
+    #work-section {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
     .section-header {
         font-size: 2.5rem;
         margin: 0 auto;
@@ -750,14 +774,8 @@ h4 {
         width: 100%;
     }
 
-    /* Add responsive rules for prototype gallery */
-    .prototype-gallery {
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-
-    .prototype-deets {
-        margin: 0.5em 2em;
+    .prototype-member {
+        width: 100%;
     }
 
     .prototype-description {
@@ -768,6 +786,11 @@ h4 {
 @media only screen and (max-width: 36em) {
     
     /* FOR PHONES */
+    #work-section {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
     .section-header{
         font-size: 2em;
     }
@@ -786,15 +809,8 @@ h4 {
         font-size: 1em;
     }
 
-    /* Add responsive rules for prototype gallery on phones */
-    .prototype-gallery {
-        padding-left: 1em;
-        padding-right: 1em;
-        padding-top: 4em;
-    }
-
-    .prototype-deets {
-        margin: 0.5em 1em;
+    .prototype-member {
+        width: 100%;
     }
 
     .prototype-header {
@@ -803,6 +819,7 @@ h4 {
 
     .prototype-description {
         font-size: 1em;
+        width: 100%;
     }
 }
 
